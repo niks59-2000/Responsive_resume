@@ -1,0 +1,150 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+}
+body{
+    font-family:"Poppins",sans-serif;
+    line-height:1.5;
+    font-size:17px;
+    background-color:lightgray;
+}
+
+/* container */
+.container{
+    display:flex;
+    flex-direction:column;
+    padding:20px;
+    max-width:800px;
+    margin:30px auto;
+    background-color: white;
+}
+
+/* main */
+.main{
+    margin:0 20px;
+}
+/* header */
+.header{
+    display:flex;
+    flex-wrap: wrap;
+}
+/* image */
+.imgs {
+    width:45%;
+    height: auto;
+}
+/* divider */
+.hr{
+    border-bottom:2px solid #f2f2f2;
+    margin:20px 0;
+}
+
+/* personal details and job */
+.contacts,.job{ 
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:20px;
+    flex-wrap:Wrap;
+}
+.contacts-para{
+    color:grey;
+}
+#email,#phone{
+    color:black;
+    text-decoration:none;
+}
+ #email:hover,#phone:hover{
+   color:#2E8B57;
+ }
+
+/* h1 heading */
+.primary-heading{
+    font-size:2.25rem;
+}
+
+/* h2 heading */
+.secondary-heading{
+    font-size:1.5rem;
+    color:#2E8B57;
+    margin-bottom:20px;
+}
+
+/* h3 heading */
+.heading{
+    font-size:1.1rem;
+}
+.experience{
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+/* about & experience*/
+.about, .experience p{
+    line-height:1.8;
+    text-align:justify;
+}
+
+/* experience */
+.experience h3{
+    margin-bottom:20px;
+}
+
+.experience li{
+    margin-bottom:5px;
+} 
+
+/* education */
+
+.sub-heading,p{
+    margin-bottom:10px;
+}
+
+.education{
+    margin-bottom:10px;
+}
+.left ,.right {
+    vertical-align: top;
+    display: inline-block;
+  }
+  
+.left {
+    width: 50%;    
+  }
+  
+.right {
+    text-align: right;
+    width: 49%;    
+  }
+  
+.edu{
+    margin-bottom:30px;
+  }
+
+.year{
+    color:#2E8B57;
+  }
+
+
+  
+  @media (max-width:500px){
+    body{
+        background:none;
+    }
+    .left,.right{
+        display:block;
+    }
+    .right{
+        text-align:left;
+    }
+    .nowrap{
+        white-space: nowrap;
+    }
+    .imgs{
+        width:50%;
+    }
+    .job,.contacts{
+        display:block;
+    }
+}
+
